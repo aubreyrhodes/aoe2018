@@ -1,0 +1,33 @@
+{
+  "name": "acr-aoc-2018",
+  "version": "0.0.1",
+  "description": "Aubrey's AoC 2018 Solutions",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "yarn jest src",
+    "test:debug": "node --inspect-brk node_modules/.bin/jest src",
+    "go": "npx babel-node src/index.js",
+    "go:debug": "npx babel-node --inspect-brk src/index.js",
+    "lint": "eslint src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-flowtype": "^3.2.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^22.1.0",
+    "jest": "^23.6.0"
+  },
+  "dependencies": {
+    "command-line-args": "^5.0.2"
+  }
+}
