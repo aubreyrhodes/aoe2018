@@ -6,6 +6,7 @@ import { join } from 'path';
 
 import Day01 from './day_01/index';
 import Day02 from './day_02/index';
+import Day03 from './day_03/index';
 
 const optionDefinitions = [
   { name: 'command', defaultOption: true },
@@ -28,6 +29,14 @@ switch (options.command) {
     console.log(`Result: ${result}`);
 
     const result2 = Day02.findId(data);
+    console.log(`Result 2: ${result2}`);
+    break;
+  }
+  case 'day03': {
+    const data = readFileSync(join(__dirname, 'day_03', 'data.txt'), 'utf8');
+    const result = Day03.getOverlaps(data);
+    console.log(`Result: ${result}`);
+    const result2 = Day03.getNonOverlaps(data);
     console.log(`Result 2: ${result2}`);
     break;
   }
